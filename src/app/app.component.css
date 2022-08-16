@@ -1,0 +1,45 @@
+.Uangular {
+  color: red;
+  margin-left: 120px;
+}
+
+.Ureact {
+  color: #61dafb;
+  margin-left: 120px;
+}
+
+form {
+  margin-left: 10%;
+}
+
+input,
+label {
+  display: block;
+}
+
+.formInput {
+  height: 40px;
+  width: 375px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: large;
+  margin-bottom: 25px;
+  background-color: #61dafb;
+}
+
+.submitButton {
+  height: 60px;
+  width: 240px;
+  margin-left: 10%;
+  background-color: #00bc19;
+  color: white;
+  border-radius: 5px;
+  border: 0px solid;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #017e11;
+}
