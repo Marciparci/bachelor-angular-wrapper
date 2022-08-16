@@ -20,7 +20,8 @@
     "module": "es2020",
     "jsx": "react",
     "typeRoots": [
-      "node_modules/@types"
+      "node_modules/@types",
+      "@types"
     ],
     "lib": [
       "es2020",
