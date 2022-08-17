@@ -12,6 +12,7 @@ import { WrapperService } from '../wrapper-service.service';
 
 export class FormComponent {
 
+  // Füllen des Formulars mit Ausgangswerten
   exampleForm = this.formBuilder.group({
     text: 'Formulartext nativer Wrapper',
     number: 20,
@@ -22,13 +23,16 @@ export class FormComponent {
     private formBuilder: FormBuilder,
   ) { }
 
+  // Funktion löst aus, wenn der "Absenden" Button des Angular Formulars betätigt wird
   onSubmit() {
     let framework = "angular";
     console.log("submitted Angular");
+
+    // Aufruf des Services und der Funktion "getInputValues" 
+    // mit Übergabeparameter des Namen des Frameworks
     WrapperService.getInputValues(framework);
 
     // Alte Variante der Datenbindung direkt über das Formular
-
     // let angularText = (<HTMLInputElement>document.getElementById("Atext")).value;
     // (<HTMLInputElement>document.getElementById("text")).value = angularText;
 
