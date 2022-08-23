@@ -7,10 +7,12 @@ class MyReactForm extends React.Component {
         super(props);
     }
 
+    // Funktion beim Absenden des React Formulars
     handleSubmit(event: { preventDefault: () => void; }) {
+        // Neuladen der Seiten Unterdrücken
         event.preventDefault();
+        // Service aufrufen mit Paramter des React Formulars
         let framework = "react";
-        console.log("submitted React");
         WrapperService.getInputValues(framework);
     }
 

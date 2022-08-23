@@ -25,22 +25,10 @@ export class FormComponent {
 
   // Funktion löst aus, wenn der "Absenden" Button des Angular Formulars betätigt wird
   onSubmit() {
-    let framework = "angular";
-    console.log("submitted Angular");
-
     // Aufruf des Services und der Funktion "getInputValues" 
     // mit Übergabeparameter des Namen des Frameworks
+    let framework = "angular";
     WrapperService.getInputValues(framework);
-
-    // Alte Variante der Datenbindung direkt über das Formular
-    // let angularText = (<HTMLInputElement>document.getElementById("Atext")).value;
-    // (<HTMLInputElement>document.getElementById("text")).value = angularText;
-
-    // let angularNumber = (<HTMLInputElement>document.getElementById("Anumber")).value;
-    // (<HTMLInputElement>document.getElementById("number")).value = angularNumber;
-
-    // let angularDate = (<HTMLInputElement>document.getElementById("Adate")).value;
-    // (<HTMLInputElement>document.getElementById("date")).value = angularDate;
   }
 
 }
